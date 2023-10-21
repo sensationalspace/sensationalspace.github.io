@@ -4,16 +4,22 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sensational Edge Intelligence</title>
-    <link rel="icon" href="https://raw.githubusercontent.com/sensationalspace/sensationalspace.github.io/main/logo1.png" type="image/png"> <!-- Replace 'LOGO_URL' with the actual logo URL -->
-    <!-- Adding Font Awesome for icons -->
+    <link rel="icon" href="https://raw.githubusercontent.com/sensationalspace/sensationalspace.github.io/main/logo1.png" type="image/png">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <style>
-        body, html {
+        /* Reset default margins and padding */
+        * {
+            box-sizing: border-box;
             margin: 0;
             padding: 0;
+        }
+
+        body, html {
             height: 100%;
-            overflow: hidden;
+            font-family: Arial, sans-serif; /* Use a more professional font family */
             background-color: #330066; /* deep dark purple */
+            color: white;
+            overflow-x: hidden; /* Hide horizontal scrollbar */
         }
 
         .background-image {
@@ -21,7 +27,7 @@
             background-size: cover;
             background-repeat: no-repeat;
             background-position: center;
-            position: absolute;
+            position: fixed; /* Fixed background image */
             top: 0;
             left: 0;
             width: 100%;
@@ -30,71 +36,83 @@
 
         .overlay-text {
             font-family: 'Lato', sans-serif;
-            font-weight: 100;
-            color: white;
+            font-weight: 300; /* Lighter font weight */
             position: absolute;
             top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            font-size: 3em;
+            left: 5%; /* Left-aligned text */
+            transform: translateY(-50%);
+            font-size: 2em; /* Adjust font size */
             text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
+            max-width: 60%; /* Avoid text spread across the screen */
         }
 
-        /* Styles for header and footer */
-        .header, .footer {
-            padding: 20px;
-            text-align: center;
-            background: #330066;
-            color: white;
-        }
         .header {
+            padding: 10px 50px; /* Reduced padding and set horizontal padding */
+            text-align: left; /* Left-aligned header items */
+            background: transparent; /* Transparent background */
             position: fixed;
             top: 0;
             width: 100%;
             z-index: 1000;
         }
+
+        .logo {
+            height: 80px; /* Reduced logo size for a more professional look */
+        }
+
+        /* Styles for the social icons */
         .footer {
             position: fixed;
             bottom: 0;
             width: 100%;
+            background: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+            padding: 10px 50px; /* Consistent with header padding */
         }
-       .logo {
-            height: 150px;
-        }
-        .company-name {
-            font-size: 2.5em; /* large font size for company name */
-            font-weight: bold; /* making company name bold */
-            display: inline-block; /* aligning with the logo */
-            margin-left: 20px; /* space between logo and company name */
-            vertical-align: middle; /* aligning name with the logo */
-        }
+
         .social-links {
-            margin: 0;
-            padding: 0;
             list-style: none;
+            text-align: right; /* Right-align the social links */
         }
+
         .social-links li {
-            display: inline;
-            margin-right: 10px; /* Adjust based on your preference */
+            display: inline; /* Inline display for horizontal list */
+            margin-right: 15px; /* Increased margin between icons */
         }
+
         .social-links a {
-            margin: 0 10px; /* Adjust based on your preference */
             color: white;
-            font-size: 24px; /* Adjust based on your preference */
+            font-size: 1.5em; /* Slightly larger icons */
+            transition: color 0.3s ease; /* Smooth color transition */
         }
-        @media (max-width: 600px) {
-            .overlay-text {
-                font-size: 1.5em; /* Adjust based on your preference */
+
+        .social-links a:hover {
+            color: #3B81F6; /* Color transition on hover */
+        }
+
+        @media (max-width: 768px) { /* Adjustments for smaller screens */
+            .header, .footer {
+                padding: 10px; /* Smaller padding */
             }
+
+            .overlay-text {
+                font-size: 1.5em; /* Smaller font size */
+                left: 10%; /* Adjust left position */
+                max-width: 80%; /* Allow more width for the text */
+            }
+
             .logo {
-                height: 30px; /* Adjust based on your preference */
+                height: 60px; /* Smaller logo */
+            }
+
+            .social-links li {
+                margin-right: 10px; /* Smaller margin between icons */
             }
         }
     </style>
 </head>
 <body>
     <div class="header">
-        <img src="https://raw.githubusercontent.com/sensationalspace/sensationalspace.github.io/main/logo1.png" alt="Sensational Logo" class="logo"> <!-- Replace 'LOGO_URL' with the actual logo URL -->
+        <img src="https://raw.githubusercontent.com/sensationalspace/sensationalspace.github.io/main/logo1.png" alt="Sensational Logo" class="logo">
     </div>
 
     <div class="background-image">
@@ -107,8 +125,8 @@
     <div class="footer">
         <ul class="social-links">
             <li><a href="https://github.com/sensationalspace" target="_blank"><i class="fab fa-github"></i></a></li>
-            <li><a href="https://twitter.com/SpaceSensation" target="_blank"><i class="fab fa-twitter"></a></li>
-            <li><a href="https://www.linkedin.com/in/stephenadebola/" target="_blank"><i class="fab fa-linkedin-in"></a></li>
+            <li><a href="https://twitter.com/SpaceSensation" target="_blank"><i class="fab fa-twitter"></i></a></li>
+            <li><a href="https://www.linkedin.com/in/stephenadebola/" target="_blank"><i class="fab fa-linkedin-in"></i></a></li>
         </ul>
     </div>
 
