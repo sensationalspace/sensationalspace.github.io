@@ -47,26 +47,35 @@
             background: #330066;
             color: white;
         }
-        .header {
-            position: fixed;
-            top: 0;
-            width: 100%;
-            z-index: 1000;
-        }
         .footer {
             position: fixed;
             bottom: 0;
             width: 100%;
         }
-        .logo {
-            height: 150px;
+        .header {
+            padding: 20px 40px; /* Adjusting padding to give more space */
+            text-align: center;
+            background: #330066; /* deep dark purple */
+            color: white;
+            position: relative; /* Added relative positioning */
         }
+
+        .header .logo-container, .header .company-name {
+            position: absolute; /* Positioned absolutely within the header */
+            top: 50%;
+            transform: translateY(-50%); /* Centered vertically */
+        }
+
+        .logo-container {
+            left: 20px; /* Positioned on the left with some space from the edge */
+        }
+
         .company-name {
+            left: 0;
+            right: 0;
+            text-align: center; /* Centered horizontally */
             font-size: 2.5em; /* large font size for company name */
             font-weight: bold; /* making company name bold */
-            display: inline-block; /* aligning with the logo */
-            margin-left: 20px; /* space between logo and company name */
-            vertical-align: middle; /* aligning name with the logo */
         }
         .social-links {
             margin: 0;
