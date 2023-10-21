@@ -1,58 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
-<script type="module">
-    import Chatbot from "https://cdn.jsdelivr.net/gh/sensationalspace/FlowiseChatEmbed@latest/dist/web.js"
-    Chatbot.init({
-        chatflowid: "c5e6707e-230e-4567-8566-ee352d8cf573",
-        apiHost: "https://ai.sensational.space",
-        chatflowConfig: {
-            // topK: 2
-        },
-        theme: {
-            button: {
-                backgroundColor: "#3B81F6",
-                right: 20,
-                bottom: 20,
-                size: "medium",
-                iconColor: "white",
-                customIconSrc: "https://raw.githubusercontent.com/walkxcode/dashboard-icons/main/svg/google-messages.svg",
-            },
-            chatWindow: {
-                welcomeMessage: "Welcome to Sensational GenAI Capabilities with Guardrails. I'm Andrita an AI Assistant. How can I help?",
-                backgroundColor: "#ffffff",
-                height: 700,
-                width: 400,
-                fontSize: 16,
-                poweredByTextColor: "#303235",
-                botMessage: {
-                    backgroundColor: "#f7f8ff",
-                    textColor: "#303235",
-                    showAvatar: true,
-                    avatarSrc: "https://github.com/sensationalspace/images/blob/main/andrita_logo.png?raw=true",
-                },
-                userMessage: {
-                    backgroundColor: "#3B81F6",
-                    textColor: "#ffffff",
-                    showAvatar: true,
-                    avatarSrc: "https://raw.githubusercontent.com/zahidkhawaja/langchain-chat-nextjs/main/public/usericon.png",
-                },
-                textInput: {
-                    placeholder: "Ask me anything?",
-                    backgroundColor: "#ffffff",
-                    textColor: "#303235",
-                    sendButtonColor: "#3B81F6",
-                }
-            }
-        }
-    })
-</script>
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sensational Edge Intelligence</title>
+    <link rel="icon" href="https://github.com/sensationalspace/sensationalspace.github.io/blob/aeadb711dca1fd2b2bfc9e942ceb81d017c5795d/logo1.png" type="image/png"> <!-- Replace 'LOGO_URL' with the actual logo URL -->
     <style>
-        body,
-        html {
+        body, html {
             margin: 0;
             padding: 0;
             height: 100%;
@@ -72,8 +26,8 @@
         }
 
         .overlay-text {
-            font-family: 'Lato', sans-serif; /* A thin contemporary font */
-            font-weight: 100; /* Making it thin */
+            font-family: 'Lato', sans-serif;
+            font-weight: 100;
             color: white;
             position: absolute;
             top: 50%;
@@ -82,16 +36,116 @@
             font-size: 3em;
             text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
         }
+
+        /* Styles for header and footer */
+        .header, .footer {
+            padding: 20px;
+            text-align: center;
+            background: darkslategray;
+            color: white;
+        }
+        .header {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: 1000;
+        }
+        .footer {
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+        .logo {
+            height: 50px; /* Adjust based on your preference */
+        }
+        .social-links {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+        .social-links li {
+            display: inline;
+            margin-right: 10px; /* Adjust based on your preference */
+        }
+        .social-links a {
+            color: white;
+            text-decoration: none;
+        }
+        @media (max-width: 600px) {
+            .overlay-text {
+                font-size: 1.5em; /* Adjust based on your preference */
+            }
+            .logo {
+                height: 30px; /* Adjust based on your preference */
+            }
+        }
     </style>
 </head>
-
 <body>
+    <div class="header">
+        <img src="https://github.com/sensationalspace/sensationalspace.github.io/blob/aeadb711dca1fd2b2bfc9e942ceb81d017c5795d/logo1.png" alt="Sensational Logo" class="logo"> <!-- Replace 'LOGO_URL' with the actual logo URL -->
+    </div>
+
     <div class="background-image">
         <div class="overlay-text">
             <h1>Edge Intelligence</h1>
             <p>We provide cutting-edge intelligence solutions that empower businesses to make informed decisions.</p>
         </div>
     </div>
-</body>
 
+    <div class="footer">
+        <ul class="social-links">
+            <li><a href="https://github.com/sensationalspace" target="_blank">GitHub</a></li>
+            <li><a href="https://twitter.com/SpaceSensation" target="_blank">Twitter</a></li>
+            <li><a href="https://www.linkedin.com/in/stephenadebola/" target="_blank">LinkedIn</a></li>
+        </ul>
+    </div>
+
+    <script type="module">
+        import Chatbot from "https://cdn.jsdelivr.net/gh/sensationalspace/FlowiseChatEmbed@latest/dist/web.js";
+        Chatbot.init({
+            chatflowid: "c5e6707e-230e-4567-8566-ee352d8cf573",
+            apiHost: "https://ai.sensational.space",
+            chatflowConfig: {
+                // topK: 2
+            },
+            theme: {
+                button: {
+                    backgroundColor: "#3B81F6",
+                    right: 20,
+                    bottom: 20,
+                    size: "medium",
+                    iconColor: "white",
+                    customIconSrc: "https://raw.githubusercontent.com/walkxcode/dashboard-icons/main/svg/google-messages.svg",
+                },
+                chatWindow: {
+                    welcomeMessage: "Welcome to Sensational GenAI Capabilities with Guardrails. I'm Andrita, an AI Assistant. How can I help?",
+                    backgroundColor: "#ffffff",
+                    height: 700,
+                    width: 400,
+                    fontSize: 16,
+                    poweredByTextColor: "#303235",
+                    botMessage: {
+                        backgroundColor: "#f7f8ff",
+                        textColor: "#303235",
+                        showAvatar: true,
+                        avatarSrc: "https://github.com/sensationalspace/images/blob/main/andrita_logo.png?raw=true",
+                    },
+                    userMessage: {
+                        backgroundColor: "#3B81F6",
+                        textColor: "#ffffff",
+                        showAvatar: true,
+                        avatarSrc: "https://raw.githubusercontent.com/zahidkhawaja/langchain-chat-nextjs/main/public/usericon.png",
+                    },
+                    textInput: {
+                        placeholder: "Ask me anything?",
+                        backgroundColor: "#ffffff",
+                        textColor: "#303235",
+                        sendButtonColor: "#3B81F6",
+                    }
+                }
+            }
+        });
+    </script>
+</body>
 </html>
