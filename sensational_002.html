@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sensational.Space - Advanced AI Agents</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet">
+    <style>
+        :root {
+            --purple-light: #8A4FFF;
+            --purple-dark: #4A0E78;
+        }
+        body {
+            font-family: 'Roboto', sans-serif;
+            background-color: #000;
+            color: #fff;
+        }
+        .section {
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .gradient-bg {
+            background: linear-gradient(135deg, var(--purple-dark), var(--purple-light));
+        }
+        .text-gradient {
+            background: linear-gradient(135deg, var(--purple-light), #fff);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .btn-primary {
+            background: linear-gradient(135deg, var(--purple-light), var(--purple-dark));
+            color: #fff;
+            padding: 0.75rem 1.5rem;
+            border-radius: 9999px;
+            font-weight: bold;
+            transition: all 0.3s ease;
+        }
+        .btn-primary:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 6px rgba(138, 79, 255, 0.25);
+        }
+        .card {
+            background: rgba(255, 255, 255, 0.05);
+            backdrop-filter: blur(10px);
+            border-radius: 15px;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+    </style>
+</head>
+<body>
+    <nav class="fixed top-0 left-0 right-0 bg-black bg-opacity-50 backdrop-filter backdrop-blur-lg z-50">
+        <div class="container mx-auto px-6 py-3">
+            <div class="flex justify-between items-center">
+                <a href="#" class="text-2xl font-bold text-gradient">Sensational.Space</a>
+                <div class="hidden md:flex space-x-6">
+                    <a href="#about" class="text-white hover:text-purple-300 transition">About</a>
+                    <a href="#services" class="text-white hover:text-purple-300 transition">Services</a>
+                    <a href="#how-it-works" class="text-white hover:text-purple-300 transition">Process</a>
+                    <a href="#case-studies" class="text-white hover:text-purple-300 transition">Case Studies</a>
+                    <a href="#contact" class="btn-primary">Contact Us</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <section id="hero" class="section gradient-bg">
+        <div class="container mx-auto text-center px-6">
+            <h1 class="text-6xl font-bold mb-6" data-aos="fade-up">
+                <span class="text-gradient">Sensational.Space</span>
+            </h1>
+            <p class="text-2xl mb-8 text-purple-100" data-aos="fade-up" data-aos-delay="200">Revolutionizing Business with Advanced AI Agents</p>
+            <a href="#services" class="btn-primary text-lg" data-aos="fade-up" data-aos-delay="400">Explore Our Solutions</a>
+        </div>
+    </section>
+
+    <section id="about" class="section bg-black">
+        <div class="container mx-auto px-6">
+            <h2 class="text-4xl font-bold mb-12 text-center text-gradient" data-aos="fade-up">About Us</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+                <div class="card p-8" data-aos="fade-right">
+                    <h3 class="text-2xl font-bold mb-4 text-purple-300">Our Vision</h3>
+                    <p class="text-gray-300">At Sensational.Space, we envision a future where AI seamlessly integrates into every aspect of business, driving efficiency and innovation to unprecedented levels.</p>
+                </div>
+                <div class="card p-8" data-aos="fade-left">
+                    <h3 class="text-2xl font-bold mb-4 text-purple-300">Our Mission</h3>
+                    <p class="text-gray-300">We're on a mission to transform the way businesses operate by harnessing the power of cutting-edge AI agents, making artificial intelligence accessible and indispensable for companies of all sizes.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="services" class="section gradient-bg">
+        <div class="container mx-auto px-6">
+            <h2 class="text-4xl font-bold mb-12 text-center text-white" data-aos="fade-up">Our Services</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div class="card p-8" data-aos="flip-left">
+                    <h3 class="text-2xl font-bold mb-4 text-purple-300">AI Agent Development</h3>
+                    <p class="text-gray-200">Custom-built AI agents tailored to your specific business needs, capable of handling complex tasks and decision-making processes.</p>
+                </div>
+                <div class="card p-8" data-aos="flip-right">
+                    <h3 class="text-2xl font-bold mb-4 text-purple-300">Process Automation</h3>
+                    <p class="text-gray-200">Streamline your operations with intelligent automation solutions that adapt and improve over time, maximizing efficiency and reducing costs.</p>
+                </div>
+                <div class="card p-8" data-aos="flip-left" data-aos-delay="200">
+                    <h3 class="text-2xl font-bold mb-4 text-purple-300">Speech-to-Speech Communication</h3>
+                    <p class="text-gray-200">Advanced AI-powered communication systems for seamless interactions between humans and AI, revolutionizing customer service and internal communications.</p>
+                </div>
+                <div class="card p-8" data-aos="flip-right" data-aos-delay="200">
+                    <h3 class="text-2xl font-bold mb-4 text-purple-300">Custom AI Solutions</h3>
+                    <p class="text-gray-200">Bespoke AI integrations designed to solve your unique challenges, from data analysis to predictive modeling and beyond.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="how-it-works" class="section bg-black">
+        <div class="container mx-auto px-6">
+            <h2 class="text-4xl font-bold mb-12 text-center text-gradient" data-aos="fade-up">Our Process</h2>
+            <div class="relative">
+                <div class="absolute left-1/2 transform -translate-x-1/2 h-full w-1 bg-purple-600"></div>
+                <div class="space-y-24 relative">
+                    <div class="flex items-center" data-aos="fade-right">
+                        <div class="w-1/2 pr-8 text-right">
+                            <h3 class="text-2xl font-bold mb-2 text-purple-300">1. Consultation</h3>
+                            <p class="text-gray-300">We assess your needs and design a custom AI solution tailored to your business goals.</p>
+                        </div>
+                        <div class="w-8 h-8 bg-purple-600 rounded-full absolute left-1/2 transform -translate-x-1/2"></div>
+                    </div>
+                    <div class="flex items-center" data-aos="fade-left">
+                        <div class="w-8 h-8 bg-purple-600 rounded-full absolute left-1/2 transform -translate-x-1/2"></div>
+                        <div class="w-1/2 ml-auto pl-8">
+                            <h3 class="text-2xl font-bold mb-2 text-purple-300">2. Development</h3>
+                            <p class="text-gray-300">Our expert team creates and trains your AI agents using state-of-the-art technologies and methodologies.</p>
+                        </div>
+                    </div>
+                    <div class="flex items-center" data-aos="fade-right">
+                        <div class="w-1/2 pr-8 text-right">
+                            <h3 class="text-2xl font-bold mb-2 text-purple-300">3. Integration</h3>
+                            <p class="text-gray-300">We seamlessly integrate the AI into your existing systems, ensuring smooth adoption and minimal disruption.</p>
+                        </div>
+                        <div class="w-8 h-8 bg-purple-600 rounded-full absolute left-1/2 transform -translate-x-1/2"></div>
+                    </div>
+                    <div class="flex items-center" data-aos="fade-left">
+                        <div class="w-8 h-8 bg-purple-600 rounded-full absolute left-1/2 transform -translate-x-1/2"></div>
+                        <div class="w-1/2 ml-auto pl-8">
+                            <h3 class="text-2xl font-bold mb-2 text-purple-300">4. Optimization</h3>
+                            <p class="text-gray-300">Continuous improvement and support ensure your AI solution evolves with your business needs and stays at peak performance.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="case-studies" class="section gradient-bg">
+        <div class="container mx-auto px-6">
+            <h2 class="text-4xl font-bold mb-12 text-center text-white" data-aos="fade-up">Case Studies</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+                <div class="card p-8" data-aos="zoom-in">
+                    <h3 class="text-2xl font-bold mb-4 text-purple-300">Global Logistics Revolution</h3>
+                    <p class="text-gray-200 mb-4">Implemented AI agents to optimize route planning and inventory management for a Fortune 500 logistics company.</p>
+                    <ul class="list-disc list-inside text-gray-300">
+                        <li>30% reduction in fuel costs</li>
+                        <li>25% improvement in delivery times</li>
+                        <li>$50M annual savings</li>
+                    </ul>
+                </div>
+                <div class="card p-8" data-aos="zoom-in" data-aos-delay="200">
+                    <h3 class="text-2xl font-bold mb-4 text-purple-300">AI-Powered Customer Service</h3>
+                    <p class="text-gray-200 mb-4">Deployed speech-to-speech AI agents for a telecommunications giant, transforming their customer support operations.</p>
+                    <ul class="list-disc list-inside text-gray-300">
+                        <li>45% improvement in customer satisfaction scores</li>
+                        <li>60% reduction in average call handling time</li>
+                        <li>24/7 support capability without increased staffing</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="section bg-black">
+        <div class="container mx-auto px-6">
+            <h2 class="text-4xl font-bold mb-12 text-center text-gradient" data-aos="fade-up">Contact Us</h2>
+            <div class="max-w-lg mx-auto">
+                <form class="space-y-6">
+                    <div>
+                        <label for="name" class="block text-purple-300 mb-2">Name</label>
+                        <input type="text" id="name" class="w-full px-4 py-2 bg-gray-900 text-white rounded-lg focus:outline-none focus:ring-2 focus:ring-purple-600" required>
+                    </div>
+                    <div>
+                        <label for="email" class="block text-purple-300 mb-2">Email</label>
+                        <input type="email" id="email" class="w-full px-4 py-2 bg-gray-900 text-white rounded-lg focus:outline-none focus:ring-2 focus:ring-purple-600" required>
+                    </div>
+                    <div>
+                        <label for="message" class="block text-purple-300 mb-2">Message</label>
+                        <textarea id="message" rows="4" class="w-full px-4 py-2 bg-gray-900 text-white rounded-lg focus:outline-none focus:ring-2 focus:ring-purple-600" required></textarea>
+                    </div>
+                    <button type="submit" class="btn-primary w-full">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-black text-white py-8">
+        <div class="container mx-auto px-6 text-center">
+            <p>&copy; 2024 Sensational.Space. All rights reserved.</p>
+            <div class="mt-4 flex justify-center space-x-4">
+                <a href="#" class="text-purple-300 hover:text-purple-100 transition">Privacy Policy</a>
+                <a href="#" class="text-purple-300 hover:text-purple-100 transition">Terms of Service</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script>
+        // Initialize AOS
+        AOS.init({
+            duration: 1000,
+            once: true,
+        });
+
+        // Smooth scroll
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html>
+
+<script type="module">
+    import Chatbot from "https://cdn.jsdelivr.net/npm/flowise-embed/dist/web.js"
+    Chatbot.init({
+        chatflowid: "ab4924ed-4a06-40ff-9f8f-e897ef52fd8a",
+        apiHost: "https://sensational.up.railway.app",
+        chatflowConfig: {
+            // topK: 2
+        },
+        theme: {
+            button: {
+                backgroundColor: "#3B81F6",
+                right: 20,
+                bottom: 20,
+                size: 48, // small | medium | large | number
+                dragAndDrop: true,
+                iconColor: "white",
+                customIconSrc: "https://raw.githubusercontent.com/walkxcode/dashboard-icons/main/svg/google-messages.svg",
+                autoWindowOpen: {
+                    autoOpen: true, //parameter to control automatic window opening
+                    openDelay: 2, // Optional parameter for delay time in seconds
+                    autoOpenOnMobile: false, //parameter to control automatic window opening in mobile
+                    },
+            },
+            tooltip: {
+                showTooltip: true,
+                tooltipMessage: 'Hi There 👋!',
+                tooltipBackgroundColor: 'black',
+                tooltipTextColor: 'white',
+                tooltipFontSize: 16,
+            },
+            chatWindow: {
+                showTitle: true,
+                title: 'Flowise Bot',
+                titleAvatarSrc: 'https://raw.githubusercontent.com/walkxcode/dashboard-icons/main/svg/google-messages.svg',
+                showAgentMessages: true,
+                welcomeMessage: 'Hello! This is custom welcome message',
+                errorMessage: 'This is a custom error message',
+                backgroundColor: "#ffffff",
+                backgroundImage: 'enter image path or link', // If set, this will overlap the background color of the chat window.
+                height: 700,
+                width: 400,
+                fontSize: 16,
+                //starterPrompts: ['What is a bot?', 'Who are you?'], // It overrides the starter prompts set by the chat flow passed
+                starterPromptFontSize: 15,
+                clearChatOnReload: false, // If set to true, the chat will be cleared when the page reloads.
+                botMessage: {
+                    backgroundColor: "#f7f8ff",
+                    textColor: "#303235",
+                    showAvatar: true,
+                    avatarSrc: "https://raw.githubusercontent.com/zahidkhawaja/langchain-chat-nextjs/main/public/parroticon.png",
+                },
+                userMessage: {
+                    backgroundColor: "#3B81F6",
+                    textColor: "#ffffff",
+                    showAvatar: true,
+                    avatarSrc: "https://raw.githubusercontent.com/zahidkhawaja/langchain-chat-nextjs/main/public/usericon.png",
+                },
+                textInput: {
+                    placeholder: 'Type your question',
+                    backgroundColor: '#ffffff',
+                    textColor: '#303235',
+                    sendButtonColor: '#3B81F6',
+                    maxChars: 50,
+                    maxCharsWarningMessage: 'You exceeded the characters limit. Please input less than 50 characters.',
+                    autoFocus: true, // If not used, autofocus is disabled on mobile and enabled on desktop. true enables it on both, false disables it on both.
+                    sendMessageSound: true,
+                    // sendSoundLocation: "send_message.mp3", // If this is not used, the default sound effect will be played if sendSoundMessage is true.
+                    receiveMessageSound: true,
+                    // receiveSoundLocation: "receive_message.mp3", // If this is not used, the default sound effect will be played if receiveSoundMessage is true. 
+                },
+                feedback: {
+                    color: '#303235',
+                },
+                footer: {
+                    textColor: '#303235',
+                    text: 'Powered by',
+                    company: 'Flowise',
+                    companyLink: 'https://flowiseai.com',
+                }
+            }
+        }
+    })
+</script>
